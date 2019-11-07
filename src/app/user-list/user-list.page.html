@@ -1,0 +1,37 @@
+<!-- student-list.page.html -->
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>List All Students</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="padding">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of studentsData">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
+        <td style="display: flex">
+          <ion-button color="warning" size="small" routerLink='/edit/{{item.id}}'>
+            <ion-icon name="create"></ion-icon>
+          </ion-button>
+          <ion-button color="danger" size="small" (click)="delete(item)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ion-button [routerLink]="['/create']">
+    Add User
+  </ion-button>
+</ion-content>

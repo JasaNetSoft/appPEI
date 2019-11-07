@@ -1,0 +1,8 @@
+{"users": [{"id":1,"name":"Juan Antonio","email":"administrador@gmail.com"},
+           {"id":2,"name":"Luis Antonio","email":"director1@gmail.com"},
+           {"id":3,"name":"Carlo Andres","email":"director2@gmail.com"},
+           {"id":4,"name":"Pedro Fernandez","email":"docente1@gmail.com"},
+           {"id":5,"name":"Julio Gomez","email":"docente2@gmail.com"},
+           {"id":6,"name":"Jorge Gonzales","email":"docente3@gmail.com"},
+           {"id":7,"name":"Alberto Cuellar","email":"docente4@gmail.com"}]
+}
